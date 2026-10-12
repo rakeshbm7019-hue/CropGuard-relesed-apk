@@ -1,7 +1,7 @@
-import { CapacitorConfig } from '@capacitor/cli';
+import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.cropguard.ai',
+  appId: 'com.cropguard.app',
   appName: 'CropGuard',
   webDir: 'dist',
   server: {
