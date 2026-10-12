@@ -25,7 +25,9 @@ android {
     signingConfigs {
         release {
             if (project.hasProperty('RELEASE_STORE_FILE') &&
-                project.property('RELEASE_STORE_FILE') &&
+                project.hasProperty('RELEASE_STORE_PASSWORD') &&
+                project.hasProperty('RELEASE_KEY_ALIAS') &&
+                project.hasProperty('RELEASE_KEY_PASSWORD') &&
                 file(project.property('RELEASE_STORE_FILE')).exists()) {
 
                 storeFile file(project.property('RELEASE_STORE_FILE'))
@@ -78,6 +80,7 @@ android {
 dependencies {
     // Android core
     implementation 'androidx.core:core-ktx:1.15.0'
+    implementation 'androidx.core:core-splashscreen:1.0.1'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.7'
     implementation 'androidx.activity:activity-compose:1.10.1'
 
