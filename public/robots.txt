@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://cropguard-ai-crop-disease-agri-assistant.ai.studio/sitemap_index.xml
-Sitemap: https://cropguard-ai-crop-disease-agri-assistant.ai.studio/sitemap.xml
